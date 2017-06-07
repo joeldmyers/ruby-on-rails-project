@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   get "/pages/about" => "pages#about"
 
+  get "/pages/contact" => "pages#contact"
+
 end
