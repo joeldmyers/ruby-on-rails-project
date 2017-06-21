@@ -9,6 +9,8 @@ Rails.application.routes.draw do
 
   get "/posts/new" => "posts#new"
 
+  get "/post/show" => "posts#show", as: :show
+
   post "/posts" => "posts#create"
 
 end

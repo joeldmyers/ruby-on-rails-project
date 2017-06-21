@@ -10,6 +10,11 @@ class PostsController < ApplicationController
   def create
     @post = Post.new(params[post_params])
     @post.save
+    redirect_to show_path
+  end
+
+  def show
+
   end
 
   private
