@@ -10,16 +10,16 @@
 #   http://dev.mysql.com/doc/refman/5.7/en/old-client.html
 #
 default: &default
-  adapter: mysql2
+  adapter: mysql
   encoding: utf8
   pool: 5
   username: root
-  password: root
+  password:
   host: localhost
 
 development:
   <<: *default
-  database: rails_app
+  database: myapp_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
